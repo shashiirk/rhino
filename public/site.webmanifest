@@ -1,0 +1,21 @@
+{
+  "name": "Rhino",
+  "short_name": "Rhino",
+  "description": "Understand where your money is going in and how is it coming to you by tracking all your spending and gaining.",
+  "icons": [
+    {
+      "src": "/android-chrome-192x192.png",
+      "sizes": "192x192",
+      "type": "image/png"
+    },
+    {
+      "src": "/android-chrome-512x512.png",
+      "sizes": "512x512",
+      "type": "image/png"
+    }
+  ],
+  "start_url": "/",
+  "theme_color": "#f6f4f7",
+  "background_color": "#f6f4f7",
+  "display": "standalone"
+}
