@@ -1,18 +1,14 @@
-import { Route, Switch } from 'react-router';
+import { Route, Routes } from 'react-router';
 
 import SignIn from './SignIn';
 import Error from './Error';
 
 const SignedOut = () => {
   return (
-    <Switch>
-      <Route exact path="/">
-        <SignIn />
-      </Route>
-      <Route path="*">
-        <Error />
-      </Route>
-    </Switch>
+    <Routes>
+      <Route path="/" element={<SignIn />} />
+      <Route path="*" element={<Error />} />
+    </Routes>
   );
 };
 

@@ -1,4 +1,4 @@
-import { useHistory } from 'react-router-dom';
+import { useNavigate } from 'react-router-dom';
 import styled from 'styled-components';
 
 const Div = styled.div`
@@ -44,10 +44,10 @@ const Div = styled.div`
 `;
 
 const Error = () => {
-  const history = useHistory();
+  const navigate = useNavigate();
 
   const goHomeHandler = () => {
-    history.replace('');
+    navigate('', { replace: true });
   };
 
   return (

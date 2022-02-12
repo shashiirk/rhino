@@ -1,6 +1,7 @@
 import { useContext } from 'react';
 import styled from 'styled-components';
 
+import HelmetContent from './components/HelmetContent';
 import Loading from './components/Loading';
 import SignedIn from './components/SignedIn';
 import SignedOut from './components/SignedOut';
@@ -36,6 +37,7 @@ const App = () => {
 
   return (
     <>
+      <HelmetContent />
       <GlobalStyle dark={themeCtx.dark} />
       <Container className={themeCtx.dark ? 'dark' : ''}>
         {onlineStatusCtx ? (

@@ -1,5 +1,5 @@
 import { useEffect, useState } from 'react';
-import { Route, Switch } from 'react-router';
+import { Route, Routes } from 'react-router';
 
 import Main from './Main';
 import AddIncome from './AddIncome';
@@ -25,26 +25,17 @@ const SignedIn = (props) => {
     <TransactionsProvider>
       <EditItemProvider>
         <CurrentTypeProvider>
-          <Switch>
-            <Route exact path="/">
-              <Main isInitial={isInitial} user={props.user} />
-            </Route>
-            <Route exact path="/add-income">
-              <AddIncome />
-            </Route>
-            <Route exact path="/add-expenses">
-              <AddExpenses />
-            </Route>
-            <Route exact path="/edit-income">
-              <EditIncome />
-            </Route>
-            <Route exact path="/edit-expenses">
-              <EditExpenses />
-            </Route>
-            <Route path="*">
-              <Error />
-            </Route>
-          </Switch>
+          <Routes>
+            <Route
+              path="/"
+              element={<Main isInitial={isInitial} user={props.user} />}
+            />
+            <Route path="/add-income" element={<AddIncome />} />
+            <Route path="/add-expenses" element={<AddExpenses />} />
+            <Route path="/edit-income" element={<EditIncome />} />
+            <Route path="/edit-expenses" element={<EditExpenses />} />
+            <Route path="*" element={<Error />} />
+          </Routes>
         </CurrentTypeProvider>
       </EditItemProvider>
     </TransactionsProvider>

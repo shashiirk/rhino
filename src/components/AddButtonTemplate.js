@@ -1,5 +1,5 @@
 import { useContext } from 'react';
-import { useHistory } from 'react-router-dom';
+import { useNavigate } from 'react-router-dom';
 import styled, { keyframes } from 'styled-components';
 
 import { PlusIcon, MinusIcon } from '../assets/icons';
@@ -92,15 +92,15 @@ const Button = styled.button`
 `;
 
 const AddButtonTemplate = (props) => {
-  const history = useHistory();
+  const navigate = useNavigate();
   const themeCtx = useContext(ThemeContext);
 
   const addIncomeHandler = () => {
-    history.push('/add-income');
+    navigate('/add-income');
   };
 
   const addExpensesHandler = () => {
-    history.push('/add-expenses');
+    navigate('/add-expenses');
   };
 
   return (

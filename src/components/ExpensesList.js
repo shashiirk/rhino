@@ -1,5 +1,5 @@
 import { useContext } from 'react';
-import { useHistory } from 'react-router-dom';
+import { useNavigate } from 'react-router-dom';
 import styled, { keyframes } from 'styled-components';
 import { CSSTransition, TransitionGroup } from 'react-transition-group';
 import {
@@ -227,7 +227,7 @@ const ExpensesList = (props) => {
   const themeCtx = useContext(ThemeContext);
   const editItemCtx = useContext(EditItemContext);
 
-  const history = useHistory();
+  const navigate = useNavigate();
 
   const swipeRightOptions = (id) => ({
     content: (
@@ -252,7 +252,7 @@ const ExpensesList = (props) => {
     actionAnimation: ActionAnimations.RETURN,
     action: () => {
       editItemCtx.setItem(item);
-      history.push('/edit-expenses');
+      navigate('/edit-expenses');
     },
   });
 

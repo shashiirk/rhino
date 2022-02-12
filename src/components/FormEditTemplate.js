@@ -1,5 +1,5 @@
 import { useContext, useEffect, useRef, useState } from 'react';
-import { useHistory } from 'react-router';
+import { useNavigate } from 'react-router-dom';
 import styled, { keyframes } from 'styled-components';
 import { doc, updateDoc } from 'firebase/firestore';
 
@@ -261,10 +261,10 @@ const FormEditTemplate = (props) => {
   const amountRef = useRef();
   const noteRef = useRef();
 
-  const history = useHistory();
+  const navigate = useNavigate();
 
   const closeHandler = () => {
-    history.goBack();
+    navigate(-1);
   };
 
   const focusInputHandler = () => {
