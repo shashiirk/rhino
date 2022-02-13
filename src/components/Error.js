@@ -7,7 +7,7 @@ const Div = styled.div`
 
   h1 {
     text-align: center;
-    font-size: 120px;
+    font-size: 96px;
     font-weight: 600;
   }
 
