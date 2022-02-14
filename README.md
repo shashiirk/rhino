@@ -21,7 +21,7 @@ See it live [here](https://the-rhino-app.web.app).
 
 ## Features
 
-- Google Sign-In authentication
+- Authentication using Google Sign-In
 - Create a transaction
 - Delete/Edit a transaction with swipe actions
 - Real-time updates
@@ -36,6 +36,10 @@ See it live [here](https://the-rhino-app.web.app).
 - [Create React App](https://create-react-app.dev)
 - [Styled components](https://www.styled-components.com)
 - [Firebase](https://firebase.google.com)
+
+## Credits
+
+Design inspired from [this](https://dribbble.com/shots/15560984-Daily-Expense-Tracker) post.
 
 ## Licence
 
