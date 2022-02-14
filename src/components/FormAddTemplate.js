@@ -272,7 +272,6 @@ const FormAddTemplate = (props) => {
           note: note,
           date: date,
         };
-        console.log(item);
 
         addDoc(collection(db, authCtx.user.uid), item).catch((error) => {
           console.log(error);

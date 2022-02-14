@@ -254,7 +254,7 @@ const FormEditTemplate = (props) => {
   }, [amount, category, date]);
 
   useEffect(() => {
-    amountRef.current.value = amount;
+    amountRef.current.value = amount || '';
     noteRef.current.placeholder = '(' + toTitleCase(category) + ')';
   }, [amount, category]);
 
