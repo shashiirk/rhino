@@ -13,7 +13,7 @@ Rhino helps in understanding where your money is going in and how it is coming t
 
 ## Preview
 
-![preview](https://user-images.githubusercontent.com/48406108/154036205-44971a3e-08d6-43ba-9bae-932fa8fcc619.gif)
+![preview](https://user-images.githubusercontent.com/48406108/160146637-525fd63e-96d9-4afc-a909-4633d980f01b.png)
 
 ## Live Demo
 
